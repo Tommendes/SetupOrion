@@ -109,8 +109,8 @@ nome_verificando
 echo "Aguarde enquanto verificamos algumas informações."
 sleep 1
 
-# Verifica se está usando Ubuntu 20.04
-if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
+# Verifica se está usando Ubuntu 24.04
+if ! grep -q 'Ubuntu 24.04' /etc/os-release; then
     nome_aviso
     desc_ver
     #echo "Este script recomenda o uso do Ubuntu 20.04."
@@ -265,7 +265,7 @@ if [ -e "SetupOrion" ]; then
 fi
 
 # Baixa o script
-curl -sSL https://raw.githubusercontent.com/oriondesign2015/SetupOrion/main/SetupOrion -o SetupOrion
+curl -sSL https://raw.githubusercontent.com/Tommendes/SetupOrion/refs/heads/main/SetupOrion -o SetupOrion
 if [ $? -eq 0 ]; then
     echo "13/13 - [ OK ] - Baixando o script"
     # Executa o script baixado
